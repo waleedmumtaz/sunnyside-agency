@@ -10,8 +10,8 @@
 </script>
 
 <header>
-  <div class="relative">
-    <!-- mobile nav -->
+  <!-- mobile nav -->
+  <div class="md:hidden relative">
     <img
       src="/assets/mobile/image-header.jpg"
       alt="half sliced orange with blue background"
@@ -24,7 +24,7 @@
           on:click|preventDefault={toggleNav}
           class={`${isNavOpen ? 'opacity-50' : ''} relative z-10`}
         >
-          <img src="/assets/icon-hamburger.svg" alt="hanburger menu" />
+          <img src="/assets/icon-hamburger.svg" alt="hamburger menu" />
         </button>
         {#if isNavOpen}
           <div
@@ -56,6 +56,35 @@
             </div>
           </div>
         {/if}
+      </nav>
+    </div>
+  </div>
+
+  <!-- desktop nav -->
+  <div class="hidden md:block relative">
+    <img
+      src="/assets/desktop/image-header.jpg"
+      alt="half sliced orange with blue background"
+    />
+    <div class="absolute inset-0 px-10 pt-12">
+      <nav class="flex justify-between items-center relative">
+        <div class="scale-125 origin-left">
+          <Logo />
+        </div>
+        <ul
+          class="flex justify-between items-center space-x-16 font-barlow text-white"
+        >
+          <li><a href="/#">About</a></li>
+          <li><a href="/#">Services</a></li>
+          <li><a href="/#">Projects</a></li>
+          <li>
+            <a
+              href="/#"
+              class="bg-white hover:bg-opacity-25 text-cstm-neutral-very-dark-desaturated-blue hover:text-white w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
