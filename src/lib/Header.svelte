@@ -1,8 +1,62 @@
-<header>
-  <nav></nav>
-</header>
+<script>
+  import { slide } from 'svelte/transition'
+  import Logo from './Logo.svelte'
 
-<!-- About
-Services
-Projects
-Contact -->
+  let isNavOpen = false
+
+  const toggleNav = () => {
+    isNavOpen = !isNavOpen
+  }
+</script>
+
+<header>
+  <div class="relative">
+    <!-- mobile nav -->
+    <img
+      src="/assets/mobile/image-header.jpg"
+      alt="half sliced orange with blue background"
+      class="w-full"
+    />
+    <div class="w-full absolute inset-0 px-6 pt-8">
+      <nav class="flex justify-between items-center relative">
+        <Logo />
+        <button
+          on:click|preventDefault={toggleNav}
+          class={`${isNavOpen ? 'opacity-50' : ''} relative z-10`}
+        >
+          <img src="/assets/icon-hamburger.svg" alt="hanburger menu" />
+        </button>
+        {#if isNavOpen}
+          <div
+            transition:slide
+            class={`${
+              isNavOpen
+                ? 'absolute top-16 w-full text-center font-barlow py-10'
+                : 'hidden'
+            } bg-white`}
+          >
+            <div class="relative">
+              <ul class="text-cstm-neutral-dark-grayish-blue text-xl space-y-8">
+                <li><a href="/#">About</a></li>
+                <li><a href="/#">Services</a></li>
+                <li><a href="/#">Projects</a></li>
+                <li
+                  class="bg-cstm-primary-yellow text-cstm-neutral-very-dark-desaturated-blue w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
+                >
+                  <a href="/#"> Contact </a>
+                </li>
+              </ul>
+              <div
+                class="w-6 overflow-hidden inline-block absolute -top-[6.5rem] right-0"
+              >
+                <div
+                  class="h-16 bg-white rotate-45 transform origin-bottom-left"
+                />
+              </div>
+            </div>
+          </div>
+        {/if}
+      </nav>
+    </div>
+  </div>
+</header>
