@@ -1,7 +1,7 @@
 <main></main>
 
-<!-- We are creatives
-
+<!--
+  
 Transform your brand
 
 We are a full-service creative agency specializing in helping brands grow fast. 

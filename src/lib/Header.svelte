@@ -22,7 +22,7 @@
         <Logo />
         <button
           on:click|preventDefault={toggleNav}
-          class={`${isNavOpen ? 'opacity-50' : ''} relative z-10`}
+          class={`${isNavOpen ? 'opacity-50' : ''} relative z-20`}
         >
           <img src="/assets/icon-hamburger.svg" alt="hamburger menu" />
         </button>
@@ -31,7 +31,7 @@
             transition:slide
             class={`${
               isNavOpen
-                ? 'absolute top-16 w-full text-center font-barlow py-10'
+                ? 'absolute top-16 w-full text-center font-barlow py-10 z-10'
                 : 'hidden'
             } bg-white`}
           >
@@ -58,6 +58,12 @@
         {/if}
       </nav>
     </div>
+    <div
+      class="absolute inset-0 px-6 flex flex-col justify-center items-center gap-16 text-white font-fraunces text-center"
+    >
+      <h1 class="uppercase text-5xl">We are creatives</h1>
+      <img src="/assets/icon-arrow-down.svg" alt="down pointing arrow" />
+    </div>
   </div>
 
   <!-- desktop nav -->
@@ -80,12 +86,18 @@
           <li>
             <a
               href="/#"
-              class="bg-white hover:bg-opacity-25 text-cstm-neutral-very-dark-desaturated-blue hover:text-white w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
+              class="bg-white hover:bg-opacity-25 text-cstm-neutral-very-dark-desaturated-blue hover:text-white transition-all w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
+    </div>
+    <div
+      class="absolute inset-0 px-6 flex flex-col justify-center items-center gap-16 md:gap-10 text-white font-fraunces text-center"
+    >
+      <h1 class="uppercase text-5xl">We are creatives</h1>
+      <img src="/assets/icon-arrow-down.svg" alt="down pointing arrow" />
     </div>
   </div>
 </header>
