@@ -80,12 +80,12 @@
         <ul
           class="flex justify-between items-center space-x-16 font-barlow text-white"
         >
-          <li><a href="/#">About</a></li>
-          <li><a href="/#">Services</a></li>
-          <li><a href="/#">Projects</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#projects">Projects</a></li>
           <li>
             <a
-              href="/#"
+              href="/#contact"
               class="bg-white hover:bg-opacity-25 text-cstm-neutral-very-dark-desaturated-blue hover:text-white transition-all w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
               >Contact</a
             >
@@ -96,7 +96,7 @@
     <div
       class="absolute inset-0 px-6 flex flex-col justify-center items-center gap-16 md:gap-10 text-white font-fraunces text-center"
     >
-      <h1 class="uppercase text-5xl">We are creatives</h1>
+      <h1 class="uppercase text-6xl tracking-widest">We are creatives</h1>
       <img src="/assets/icon-arrow-down.svg" alt="down pointing arrow" />
     </div>
   </div>

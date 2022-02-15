@@ -7,33 +7,35 @@
     id="contact"
     class="flex flex-col justify-center items-center bg-cstm-primary-dark-moderate-cyan bg-opacity-70 px-6 py-10 gap-10"
   >
-    <Logo fillColor="#25564b" />
+    <div class="md:scale-150">
+      <Logo fillColor="#25564b" />
+    </div>
     <ul
-      class="w-full flex justify-around items-center font-barlow text-cstm-primary-dark-desaturated-cyan"
+      class="w-full flex justify-around items-center font-barlow text-cstm-primary-dark-desaturated-cyan md:max-w-xs"
     >
-      <li><a href="/#about">About</a></li>
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/#projects">Projects</a></li>
+      <li class="md:hover:text-white"><a href="/#about">About</a></li>
+      <li class="md:hover:text-white"><a href="/#services">Services</a></li>
+      <li class="md:hover:text-white"><a href="/#projects">Projects</a></li>
     </ul>
     <div class="flex items-center gap-8">
-      <a href="/#" class="w-full">
+      <a href="/#" class="w-full hover:-translate-y-1 transition-all">
         <img
           src="/assets/icon-facebook.svg"
           alt="facebook icon"
           class="w-full"
         />
       </a>
-      <a href="/#" class="w-full">
+      <a href="/#" class="w-full hover:-translate-y-1 transition-all">
         <img
           src="/assets/icon-instagram.svg"
           alt="instagram icon"
           class="w-full"
         />
       </a>
-      <a href="/#" class="w-full">
+      <a href="/#" class="w-full hover:-translate-y-1 transition-all">
         <img src="/assets/icon-twitter.svg" alt="twitter icon" class="w-full" />
       </a>
-      <a href="/#" class="w-full">
+      <a href="/#" class="w-full hover:-translate-y-1 transition-all">
         <img
           src="/assets/icon-pinterest.svg"
           alt="pinterest icon"
