@@ -73,7 +73,7 @@
       alt="half sliced orange with blue background"
     />
     <div class="absolute inset-0 px-10 pt-12">
-      <nav class="flex justify-between items-center relative">
+      <nav class="flex justify-between items-center relative z-10">
         <div class="scale-125 origin-left">
           <Logo />
         </div>
