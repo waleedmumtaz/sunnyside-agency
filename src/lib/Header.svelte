@@ -37,13 +37,13 @@
           >
             <div class="relative">
               <ul class="text-cstm-neutral-dark-grayish-blue text-xl space-y-8">
-                <li><a href="/#">About</a></li>
-                <li><a href="/#">Services</a></li>
-                <li><a href="/#">Projects</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#projects">Projects</a></li>
                 <li
                   class="bg-cstm-primary-yellow text-cstm-neutral-very-dark-desaturated-blue w-fit mx-auto rounded-full px-8 py-4 uppercase font-fraunces font-bold text-base"
                 >
-                  <a href="/#"> Contact </a>
+                  <a href="/#contact"> Contact </a>
                 </li>
               </ul>
               <div
